@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+django_user.egg-info/PKG-INFO
+django_user.egg-info/SOURCES.txt
+django_user.egg-info/dependency_links.txt
+django_user.egg-info/not-zip-safe
+django_user.egg-info/top_level.txt
+user/__init__.py
+user/backends.py
+user/forms.py
+user/urls.py
+user/views.py
