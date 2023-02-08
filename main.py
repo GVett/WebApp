@@ -8,7 +8,7 @@ import errors as e
 # Define and initialize all apps
 app = Flask(__name__, template_folder='templates')
 app.secret_key = b'yWXuzVPlWUT0j0s4APynXBrJAQzWOrEb'
-navigation = {'Home':'/', 'Logout':'/logout'}
+navigation = {'Home':'/', 'Pi': '/pi', 'Logout':'/logout'}
 bcrypt = Bcrypt()
 bcrypt.init_app(app)
 login_manager = LoginManager()
@@ -41,6 +41,11 @@ def index():
   # If not logged in, return login form
   else:
     return render_template("login.html")
+
+@app.route('/pi')
+@login_required
+def pi():
+  return render_template("pi.html", navigation = navigation)
 
 @app.route('/login')
 def login():

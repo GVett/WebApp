@@ -1,6 +1,3 @@
-from flask import render_template
-from main import app, db
-
 wrong_password = "Wrong password."
 invalid_signup = "Account not found."
 username_taken = "Username taken."
