@@ -1,0 +1,1 @@
+navigation = {'Home':'/', 'Pi': '/pi', 'Logout':'/logout'}

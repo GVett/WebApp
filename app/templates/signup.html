@@ -1,0 +1,26 @@
+{% extends "_master.html" %}
+
+{% block title %}Signup{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+  <h1 class="title">Signup</h1>
+  <div class="row">
+    <div class="col-sm">
+      <form action="/createaccount" method="post">
+        <label for="newusername">Username</label><br>
+        <input name="newusername"><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="newpassword"><br>
+        <br><br>
+        <input type="submit" value="Sign Up">
+      </form>
+      </br>
+    </div>
+  </div>
+  <p>or</p>
+  <h5 class="link"><a class="signup" href="/login">Login</a></h5>
+</div>
+
+{% endblock %}

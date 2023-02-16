@@ -1,0 +1,6 @@
+<nav class="navbar navbar-light bg-light row">
+  <a class="navbar-brand" href="https://www.youtube.com/c/GarrettTheNerd/featured"> <img src="{{url_for('static', filename='images/garte.jpg')}}" width="30" height="30"> </a>
+  {% for key, value in navigation.items() %}
+    <a class="nav-item col" href='{{ value }}'>{{ key }}</a>
+  {% endfor %}
+</nav>
