@@ -3,7 +3,7 @@ from flask_login import current_user
 from replit import db
 from app.navigation import navigation
 
-home_blueprint = Blueprint('gome_blueprint', __name__, template_folder = 'templates')
+home_blueprint = Blueprint('home_blueprint', __name__, template_folder = 'templates')
 
 @home_blueprint.route('/')
 def index():

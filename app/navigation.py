@@ -1,1 +1,1 @@
-navigation = {'Home':'/', 'Pi': '/pi', 'Logout':'/logout'}
+navigation = {'Home':'/', 'Pi': '/pi', 'Logout':'/logout', 'Movie':'/movie'}
