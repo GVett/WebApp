@@ -8,4 +8,15 @@
 
 <h1 class="title">Movies</h1>
 
+<body>
+    <div>
+    {% block content %}
+        {% for movie in movies %}
+        <div id="movie" style="background-image: url(http://image.tmdb.org/t/p/w500{{movie.backdrop_path}});">
+        </div>
+        {% endfor %}
+    {% endblock %}
+    </div>
+</body>
+
 {% endblock %}
