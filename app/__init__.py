@@ -10,6 +10,8 @@ from home.routes import home_blueprint
 from login.routes import login_blueprint
 from signup.routes import signup_blueprint
 from movie.routes import movie_blueprint
+from api.routes import api_blueprint
+from ethan.routes import ethan_blueprint
 
 login_manager = LoginManager()
 bcrypt = Bcrypt()
@@ -29,5 +31,7 @@ def create_app():
   app.register_blueprint(login_blueprint)
   app.register_blueprint(signup_blueprint)
   app.register_blueprint(movie_blueprint)
+  app.register_blueprint(api_blueprint)
+  app.register_blueprint(ethan_blueprint)
     
   return app
